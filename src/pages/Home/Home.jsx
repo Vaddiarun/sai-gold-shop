@@ -51,7 +51,7 @@ const Home = () => {
           >
             <div className="w-full h-60 overflow-hidden">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover "
                 src={items.url}
                 alt={items.type}
               />

@@ -36,12 +36,12 @@ export default function Navbar() {
       <div className="flex justify-between items-center p-4">
         <Link to="/">
           <img
-            src="DALL·E 2024-08-16 15.09.25 - A luxurious logo design for 'Sree Veerabadhareshwara Jewelry Works' (SVJW), incorporating a gold theme with elegant typography and an artistic depicti.webp"
+            src="https://res.cloudinary.com/dfxkazmkc/image/upload/v1723829037/kc9dtfns6bq35eghyunl.webp"
             alt="Sree Veerabadhareshwara Jewelry Works"
             className="w-12 h-12 rounded-full mr-1 ml-0 lg:ml-2 lg:w-28 lg:h-28 md:ml-2 md:w-28 md:h-28"
           />
         </Link>
-        <h6 className="text-sm mr-1 lg:text-xl md:text-xl  2xl:text-3xl ">
+        <h6 className="text-sm  mr-1 lg:text-xl md:text-xl  2xl:text-3xl ">
           Sree Veerabadhareshwara Jewellery Works
         </h6>
 
