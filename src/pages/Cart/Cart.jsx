@@ -48,7 +48,7 @@ export default function Cart() {
 
       // Prepare WhatsApp message
       const message = `Hi, I am interested in your services. Here are my details:\n\nName: ${name}\nContact Number: ${contactNumber}\n\nCart Details:\n${cartDetails}`;
-      const phoneNumber = "7989759695"; // Replace with your WhatsApp number
+      const phoneNumber = "8688261165"; // Replace with your WhatsApp number
       const encodedMessage = encodeURIComponent(message);
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
@@ -127,13 +127,15 @@ export default function Cart() {
             onClick={handlesubmit}
             className="ml-5 mb-3 bg-green-400 hover:bg-green-500 text-white font-semibold py-1 px-3 rounded-lg block mx-auto"
           >
-            Click Here To Get Call From Our Side
+            Click Here To Submit Cart details In whatsapp
           </button>
 
           {/* Contact Form */}
           {show && (
             <div className="p-4 max-w-md mx-auto bg-white shadow-lg rounded-lg mt-8">
-              <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+              <h2 className="text-2xl font-bold mb-4">
+                Enter Your Details Will Contact You Throught Whats App
+              </h2>
               <form onSubmit={handleSubmittovender}>
                 <div className="mb-4">
                   <label
