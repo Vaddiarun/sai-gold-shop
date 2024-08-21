@@ -37,12 +37,10 @@ const Home = () => {
 
   return (
     <div className="bg-[#f7f3e7] text-[#3e3e3e] w-screen min-h-screen p-6">
-      {" "}
-      {/* Removed h-screen */}
       <h1 className="text-4xl font-bold text-center mb-6">
         Explore Our Gold Collection
       </h1>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <ul className="grid grid-cols-2 gap-6">
         {category.map((items) => (
           <Link
             key={items.type}
@@ -51,7 +49,7 @@ const Home = () => {
           >
             <div className="w-full h-60 overflow-hidden">
               <img
-                className="w-full h-full object-cover "
+                className="w-full h-full object-cover"
                 src={items.url}
                 alt={items.type}
               />

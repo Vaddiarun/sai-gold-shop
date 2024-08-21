@@ -27,46 +27,38 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div
-      className="w-screen text-white relative"
-      style={{
-        backgroundImage: "linear-gradient(180deg, #623900 11%, #35270c 68%)",
-      }}
-    >
-      <div className="flex justify-between items-center p-4">
+    <div className="w-screen text-white relative">
+      <div className="flex justify-between items-center p-4 bg-gradient-to-r from-[#1a1a1a] to-[#4b4b4b] shadow-lg">
         <Link to="/">
           <img
             src="https://res.cloudinary.com/dfxkazmkc/image/upload/v1723829037/kc9dtfns6bq35eghyunl.webp"
             alt="Sree Veerabadhareshwara Jewelry Works"
-            className="w-12 h-12 rounded-full mr-1 ml-0 lg:ml-2 lg:w-28 lg:h-28 md:ml-2 md:w-28 md:h-28"
+            className="w-20 h-20 rounded-full md:ml-5 ml-1 mr-2  "
           />
         </Link>
-        <h6 className="text-sm  mr-1 lg:text-xl md:text-xl  2xl:text-3xl ">
+        <p className=" text-[10px] lg:text-2xl font-semibold text-gold p-3 hover:text-yellow-300 ">
           Sree Veerabadhareshwara Jewellery Works
-        </h6>
+        </p>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex space-x-6 text-2xl">
+        <ul className="hidden lg:flex space-x-8 text-lg font-medium">
           <li>
-            <Link to="/" className="hover:text-[#d4af37] cursor-pointer">
+            <Link to="/" className="hover:text-gold transition-colors">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-[#d4af37] cursor-pointer">
+            <Link to="/about" className="hover:text-gold transition-colors">
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-[#d4af37] cursor-pointer">
+            <Link to="/contact" className="hover:text-gold transition-colors">
               Contact Us
             </Link>
           </li>
           <li>
-            <Link
-              to="/cart"
-              className="hover:text-[#d4af37] mr-8 cursor-pointer"
-            >
+            <Link to="/cart" className="hover:text-gold transition-colors">
               Cart
             </Link>
           </li>
@@ -77,7 +69,7 @@ export default function Navbar() {
           onClick={handleMobileHamburger}
           aria-expanded={show}
           aria-controls="mobile-menu"
-          className="text-[26px] lg:hidden"
+          className="text-3xl lg:hidden"
         >
           &#9776; {/* Hamburger Icon */}
         </button>
@@ -87,16 +79,16 @@ export default function Navbar() {
       <div
         id="mobile-menu"
         ref={menuRef}
-        className={`fixed top-0 right-0 h-screen w-[60%] bg-gradient-to-b from-[#623900] to-[#35270c] text-white shadow-lg transform ${
+        className={`fixed top-0 right-0 h-screen w-[60%] bg-gradient-to-b from-[#1a1a1a] to-[#4b4b4b] text-white shadow-lg transform ${
           show ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-500 ease-in-out z-50 lg:hidden`}
       >
-        <ul className="flex flex-col p-6 space-y-4 text-lg">
+        <ul className="flex flex-col p-6 space-y-4 text-lg font-medium">
           <li>
             <Link
               to="/"
               onClick={() => setShow(false)}
-              className="hover:text-[#d4af37]"
+              className="hover:text-gold transition-colors"
             >
               Home
             </Link>
@@ -105,7 +97,7 @@ export default function Navbar() {
             <Link
               to="/about"
               onClick={() => setShow(false)}
-              className="hover:text-[#d4af37]"
+              className="hover:text-gold transition-colors"
             >
               About Us
             </Link>
@@ -114,7 +106,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setShow(false)}
-              className="hover:text-[#d4af37]"
+              className="hover:text-gold transition-colors"
             >
               Contact Us
             </Link>
@@ -123,7 +115,7 @@ export default function Navbar() {
             <Link
               to="/cart"
               onClick={() => setShow(false)}
-              className="hover:text-[#d4af37]"
+              className="hover:text-gold transition-colors"
             >
               Cart
             </Link>
