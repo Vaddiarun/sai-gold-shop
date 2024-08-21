@@ -48,7 +48,7 @@ export default function Cart() {
 
       // Prepare WhatsApp message
       const message = `Hi, I am interested in your services. Here are my details:\n\nName: ${name}\nContact Number: ${contactNumber}\n\nCart Details:\n${cartDetails}`;
-      const phoneNumber = "8688261165"; // Replace with your WhatsApp number
+      const phoneNumber = "7989272421"; // Replace with your WhatsApp number
       const encodedMessage = encodeURIComponent(message);
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
@@ -164,7 +164,7 @@ export default function Cart() {
                     className="block text-gray-700 text-sm font-bold mb-2"
                     htmlFor="contactNumber"
                   >
-                    Contact Number
+                    Enter Your Details And Send this Through What'sApp
                   </label>
                   <input
                     type="text"
