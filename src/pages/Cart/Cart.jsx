@@ -38,9 +38,12 @@ export default function Cart() {
       newErrors.contactNumber = "Contact number must be 10 digits";
 
     if (Object.keys(newErrors).length === 0) {
-      // Prepare cart items data
+      // Prepare cart items data with image URLs
       const cartDetails = cartitems
-        .map((item) => `- ${item.name} (Quantity: ${item.quantity})`)
+        .map(
+          (item) =>
+            `- ${item.name} (Quantity: ${item.quantity})\nImage: ${item.image_url}`
+        )
         .join("\n");
 
       // Prepare WhatsApp message
