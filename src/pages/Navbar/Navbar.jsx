@@ -43,22 +43,28 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-8 text-lg font-medium">
           <li>
-            <Link to="/" className="hover:text-gold transition-colors">
+            <Link to="/" className="hover:text-yellow-200 transition-colors">
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/about" className="hover:text-gold transition-colors">
               About Us
             </Link>
-          </li>
+          </li> */}
           <li>
-            <Link to="/contact" className="hover:text-gold transition-colors">
+            <Link
+              to="/contactuS"
+              className="hover:text-yellow-200 transition-colors"
+            >
               Contact Us
             </Link>
           </li>
           <li>
-            <Link to="/cart" className="hover:text-gold transition-colors">
+            <Link
+              to="/cart"
+              className="hover:text-yellow-200 transition-colors"
+            >
               Cart
             </Link>
           </li>
@@ -88,12 +94,12 @@ export default function Navbar() {
             <Link
               to="/"
               onClick={() => setShow(false)}
-              className="hover:text-gold transition-colors"
+              className="hover:text-yellow-200 transition-colors"
             >
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/about"
               onClick={() => setShow(false)}
@@ -101,12 +107,12 @@ export default function Navbar() {
             >
               About Us
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/contact"
               onClick={() => setShow(false)}
-              className="hover:text-gold transition-colors"
+              className="hover:text-yellow-200 transition-colors"
             >
               Contact Us
             </Link>
@@ -115,7 +121,7 @@ export default function Navbar() {
             <Link
               to="/cart"
               onClick={() => setShow(false)}
-              className="hover:text-gold transition-colors"
+              className="hover:text-yellow-200 transition-colors"
             >
               Cart
             </Link>
