@@ -15,7 +15,7 @@ export default function Product() {
 
   useEffect(() => {
     dispatch(featchCategory()); // Fetch products based on the category
-  }, [dispatch, id]);
+  }, []);
 
   // Add to cart handler
   const handlebuttonClick = (product) => {

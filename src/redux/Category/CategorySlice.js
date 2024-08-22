@@ -14,7 +14,7 @@ export const featchCategory = createAsyncThunk(
       }));
       return dataList;
     } catch (error) {
-      console.log(error.message);
+      console.log(error);
       return rejectWithValue(error.message);
     }
   }
